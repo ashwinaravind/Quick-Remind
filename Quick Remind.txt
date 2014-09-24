@@ -1,0 +1,32 @@
+Send Reminder by Email ID To Friends only
+Accept Reminder from Friends only or accepted Contacts
+Ping - Vibrate/Make sound
+
+
+Tables
+Users List
+Users and Friends mapping
+RemiderID,Msg,From ID, To ID, Schedule
+RemiderID,ReminderInstnaceId,Msg,From ID, To ID, Schedule,Status
+Users Reminders
+Schedule Table
+
+Functions
+Login
+Create Reminder
+Accept REminder from Unknown
+Alert
+Snooz
+Done
+
+
+Batch Jobs
+Accept Remind
+Send Remind
+Receive Status
+Update Status
+Create User
+Add Friends
+
+
+
