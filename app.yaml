@@ -5,7 +5,16 @@ api_version: 1
 threadsafe: yes
 
 
+
 handlers:
+
 - url: /.*
   script: helloworld.application
+  
+- url: /
+  static_files: public/test.html
+  upload: public/test.html
+  
+
+
 

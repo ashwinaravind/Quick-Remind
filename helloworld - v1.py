@@ -17,14 +17,18 @@ class MainPage(webapp2.RequestHandler):
     def get(self):
         #self.response.headers['Content-Type'] = 'text/plain'
         #self.response.write('Hello, World!')
-	# self.response.write('<html><body>')
+	self.response.write("""<html><body>""")
         self.query = Greeting.all()
 	for self.greeting in self.query:
 	    self.response.write('<p>%s</p>' % self.greeting.content)
      	self.response.write("""
      	<form method="post">
 	<input type="textarea" name="post"></input>
-	<input type="submit" ></input></form></body></html>""")
+	<input type="submit" ></input></form></body>
+	
+	
+	
+	</html>""")
 	
     def post(self):
     	self.greeting = Greeting(content=self.request.get("post"))
